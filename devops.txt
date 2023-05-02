@@ -612,6 +612,30 @@ from Raman Sharma to everyone:    8:19 AM
   
   -----------------------
   
+   14  kubectl get nodes
+   15  kubectl get pods
+   16  kubectl run pod1 --image nginx
+   17  kubectl get pods
+   18  kubectl get pods -o wide
+   19  kubectl get pod pod1 -o yaml
+   20  kubectl edit pod pod1
+   21  kubectl describe pod pod1
+   22  kubectl delete pod pod1
+   23  vi pod.yaml
+   24  kubectl get pods
+   25  kubectl create -f pod.yaml
+   26  kubectl get pods
+   27  kubectl get pods -o wide
+   28  kubectl describe pod pod1
+   29  vi pod.yaml
+   30  kubectl apply -f pod.yaml
+   31  kubectl describe pod pod1
+   32  vi pod.yaml
+   33  kubectl delete -f pod.yaml
+   34  kubectl create -f pod.yaml
+   35  kubectl get pods -o wide
+   36  kubectl exec -it pod1 -c c1 -- bash
+  
     
     
 
