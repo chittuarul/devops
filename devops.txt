@@ -495,6 +495,125 @@ from Raman Sharma to everyone:    7:57 AM
     6  vi /etc/docker/certs.d/repo.docker.kmit\:5000/domain.crt
     7  docker images
     8  history
+    
+    -----------------------
+    
+    from Raman Sharma to everyone:    8:19 AM
+  1  apt update && apt install docker.io -y
+    2  docker --version
+    3  dcoker container run -it --name c1 -d ubuntu
+    4  docker container run -it --name c1 -d ubuntu
+    5  docker exec -it c1 bash
+    6  docker stop c1
+    7  docker ps
+    8  docker ps -a
+    9  docker start c1
+   10  docker ps -a
+   11  docker exec -it c1 bash
+   12  docker rm -f c1
+   13  docker ps -a
+   14  docker container run -it --name c2 --mount --type=tmpfs,destination=/demo -d ubuntu
+   15  docker container run -it --name c2 --mount type=tmpfs,destination=/demo -d ubuntu
+   16  docker inspectc2
+   17  docker inspect c2
+   18  docker exec -it c1 bash
+   19  docker exec -it c2 bash
+   20  docker stop c2
+   21  docker ps -a
+   22  docker start c2
+   23  docker exec -it c2 bash
+   24  docker rm -f c2
+   25  ls /var/lib/docker/
+   26  ls /var/lib/docker/volumes/
+   27  docker volume prune
+   28  docker volume --help
+   29  docker volume ls
+   30  docker volume create demo-vol
+from Raman Sharma to everyone:    8:19 AM
+ 31  docker volume ls
+   32  ls /var/lib/docker/volumes/
+   33  ls /var/lib/docker/volumes/demo-vol/_data/
+   34  docker container run -it --name c1 --mount source=demo-vol,destination=/demo -d ubuntu
+   35  docker inspect c1
+   36  docker exec -it c1 bash
+   37  ls /var/lib/docker/volumes/demo-vol/_data/
+   38  docker rm -f c1
+   39  ls /var/lib/docker/volumes/demo-vol/_data/
+   40  docker container run -it --name c2 --mount source=demo-vol,destination=/app -d centos
+   41  docker exec -it c2 bash
+   42  docker volume rm demo-vol
+   43  docker rm -f c2
+   44  ls /var/lib/docker/volumes/demo-vol/_data/
+   45  docker volume rm demo-vol
+   46  ls /var/lib/docker/volumes/demo-vol/_data/
+   47  mkdir mydir
+   48  ls
+   49  cd mydir/
+   50  ls
+   51  touch 1 2 3 4
+   52  ls
+   53  docker container run -it --name c1 -v /home/ubuntu/mydir:/demo1 -d centos
+   54  docker exec -it c1 bash
+   55  ls
+   56  cd ..
+   57  docker rm -f c1
+   58  ls mydir/
+from Raman Sharma to everyone:    8:19 AM
+ 59  rm -ifr mydir/
+   60  ls
+   61  ip a
+   62  docker network ls
+   63  docker container run -it --name c1 -d centos
+   64  docker inspect c1
+   65  docker container run -it --name c2 -d centos
+   66  docker inspect c2
+   67  docker exec -it c2 bash
+   68  docker rm -f c1 c2
+   69  docker network ls
+   70  docker network create -d bridge br1 --subnet 192.168.0.0/16 --gateway 192.168.0.1
+   71  docker network ls
+   72  docker container run -it --name c1 --network br1 -d centos
+   73  docker inspect c1
+   74  docker container run -it --name c2 --network br1 -d centos
+   75  docker inspect c2
+   76  docker exec -it c2 bash
+   77  docker rm -f c1 c2
+   78  docker network rm br1
+   79  docker network ls
+   80  docker ps -a
+   81  docker container run -it --name h1 --network host -d nginx
+   82  docker rm -f h1
+   83  docker network ls
+   84  docker container run -it --name n1 --network none -d cenos
+   85  docker container run -it --name n1 --network none -d cent
+from Raman Sharma to everyone:    8:19 AM
+ 86  docker exec -it n1 bash
+   87  docker network disconnect none n1
+   88  docker network connect bridge n1
+   89  docker inspect n1
+   90  docker exec -it n1 bash
+   91  docker rm -f n1
+   92  docker ps -a
+   93  sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   94  chmod +x /usr/local/bin/docker-compose
+   95  vi docker-compose.yml
+   96  docker-compose up -d
+   97  docker ps -a
+   98  docker-compose scale db=3
+   99  docker ps -a
+  100  docker-compose scale db=1
+  101  docker-compose --help
+  102  docker-compose stop db
+  103  docker ps -a
+  104  docker-compose start db
+  105  docker ps -a
+  106  docker-compose down
+  107  docker ps -a
+  
+  -----------------------
+  
+    
+    
 
 
 
