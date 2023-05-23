@@ -1,0 +1,510 @@
+https://allianz-agn.webex.com/allianz-agn/j.php?MTID=m780d701d6b9e4b31ebded3a199d6d348
+
+LMS Credentials:
+LMS Username	LMS Password	LMS URL
+allchitt
+Allchitt1!
+https://lms.cognixia.com/moodle/login/index.php
+
+
+VM Credentials: (VM accessibility: During training hours only)
+VM Username	VM Password	VM URL
+cogmarjenuser04
+CenJenx4Lab45$
+https://cloudlabs.nuvepro.com/company/Cognixia/home
+
+Email
+cogmarjenuser04@nuvelabs.com
+Login ID
+cogmarjenuser04
+Nuvelabs123$
+
+gittoken
+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
+
+git@github.com:chittuarul/devops.git
+
+
+
+ 1  git --version
+    2  apt purge git -y
+    3  apt update
+    4  git --version
+    5  mkdir SpringProj
+    6  cd SpringProj/
+    7  git init
+    8  ls -la
+    9  ls .git/
+   10  touch dao.java bal.java pl.java
+   11  ls
+   12  git status
+   13  git add bal.java
+   14  git status
+   15  git rm --cached bal.java
+   16  git status
+   17  git add .
+   18  git status
+   19  git commit -m "bal.java" bal.java
+   20  whoami
+   21  echo $HOME
+   22  ls -la /root
+   23  git config --global user.name globaluser
+   24  ls -la /root
+   25  cat /root/.gitconfig
+   26  git config --global user.email globaluser@gmail.com
+   27  cat /root/.gitconfig
+   28  git status
+   29  git commit -m "bal.java file is added" bal.java
+   30  git status
+   31  git log
+   32  ls .git/
+   33  cat .git/config
+   34  git config --local --user.name localuser
+   35  git config --local user.name localuser
+   36  cat .git/config
+   37  git config --local user.email localuser@gmail.com
+    2  cat .git/config
+    3  git branch
+    4  git branch -M main
+    5  git branch
+    6  git push -u origin main
+	---------------------------------------------------
+	 65  cd SpringProj
+   66  cat .git/config
+   67  git remote add origin https://github.com/onlineTrainingguy/SpringProj1.git
+   68  cat .git/config
+   69  git branch -M main
+   70  git branch
+   71  git log --oneline
+   72  ls
+   73  git push -u origin main
+   74  touch junit.java
+   75  git status
+   76  git add .
+   77  git commit -m "junit.java file is added"
+   78  git push origin main
+   79  ssh-keygen
+   80  cat /root/.ssh/id_rsa.pub
+   81  git remote set-url origin git@github.com:onlineTrainingguy/SpringProj1.git
+   82  cat .git/config
+   83  touch ssh.java
+   84  git status
+   85  git add .
+   86  git commit -m "ssh.java file is added to check ssh connectivity"
+   87  git push origin main
+   88  touch tmp.java
+   89  git status
+   90  git add .
+   91  git status
+   92  git commit -m "tmp.java file is added"
+   93  git status
+   94  git log --oneline
+   95  git reset HEAD~1
+   96  git log --oneline
+   97  git status
+   98  git add .
+   99  git commit -m "tmp.java file is added"
+  100  git log --oneline
+  101  git reset --soft HEAD~1
+  102  git log --oneline
+  103  git status
+  104  git commit -m "tmp.java file is added"
+  105  git log --oneline
+  106  ls
+  107  git reset --hard HEAD~1
+  108  git log --oneline
+  109  git status
+  110  ls
+  111  git status
+  112  touch package.json
+  113  git status
+  114  git add .
+  115  git commit -m "package.json file is added"
+  116  git status
+  117  git log --oneline
+  118  echo "{appname:localrepo}" > package.json
+  119  cat package.json
+  120  git status
+  121  git add .
+  122  git commit -m "pacakage.json file is modified"
+  123  git log --oneline
+  124  git diff 7dafc46 d02b8ad
+  125  git status
+  126  git revert 7dafc46
+  127  cat package.json
+  128  git log --oneline
+  129  git revert ca943ea
+  130  cat package.json
+  --------------------------------------------
+  1  git --version
+    2  git clone -b dev1 https://github.com/onlineTrainingguy/SpringProj1.git
+    3  ls
+    4  cd SpringProj1/
+    5  ls
+    6  git branch
+    7  git config --global user.name dev1
+    8  git config --global user.email dev1@gmail.com
+    9  ls
+   10  git log --oneline
+   11  touch dev1.java
+   12  git status
+   13  git add .
+   14  git commit -m "dev1.java file is added by dev1"
+   15  git log --oneline
+   16  git push origin dev1
+   17  git pull origin dev1
+   18  ls
+  ------------------------------
+  git fetch
+    2  ls
+    3  git merge origin/main
+    4  ls
+    5  git pull origin main
+    6  ls
+    7  git pull origin main --no-rebase
+    8  ls
+    9  git log --oneline
+   10  git push origin main
+   11  git branch
+   12  git branch dev1
+   13  git branch
+   14  git branch -D dev1
+   15  git branch
+   16  git branch dev1
+   17  git branch dev2
+   18  git branch
+   19  git push origin dev1
+   20  git push origin dev2
+   21  git checkout dev1
+   22  git branch
+   23  git pull origin dev1
+   24  ls
+   25  git checkout dev2
+   26  git pull origin dev2
+   27  ls
+   28  git checkout main
+   29  git merge dev1
+   30  ls
+   31  git merge dev2
+   32  ls
+   33  git push origin main
+   34  git checkout dev1
+   35  git merge main
+   36  ls
+   37  git push origin dev1
+   38  git checkout dev2
+   39  git merge main
+   40  git push origin dev2
+   41  history
+---------------------------------
+
+from Raman Sharma to everyone:    9:10 AM
+ 42  git branch
+   43  git checkout main
+   44  ls
+   45  git checkout dev1
+   46  cat dao.java
+   47  echo "dao.java file is modified by dev1" > dao.java
+   48  git add .
+   49  git commit -m "dev1 has made the changes"
+   50  git checkout dev2
+   51  cat dao.java
+   52  echo "dao.java file is modified by dev2" > dao.java
+   53  cat dao.java
+   54  git add .
+   55  git commit -m "this file is updated by dev2"
+   56  git checkout main
+   57  cat dao.java
+   58  git merge dev1
+   59  cat dao.java
+   60  git merge dev2
+   61  git mergetool --tool vimdiff
+   62  la
+   63  ls
+   64  cat dao.java
+   65  cat dao.java.orig
+   66  rm dao.java.orig
+   67  git status
+   68  git commit -m "dao.java merge conflict is resolved"
+   69  cat dao.java
+   70  git checkout dev1
+   71  git merge main
+   72  cat dao.java
+   73  git checkout dev2
+   74  cat dao.java
+   75  git merge main
+   76  cat dao.java
+   77  cd ..
+   78  mkdir mr
+   79  cd mr/
+   80  git init
+   
+from Raman Sharma to everyone:    9:11 AM
+   81  touch m1 m2 m3
+   82  git status
+   83  git add .
+   84  git commit -m "m1" m1
+   85  git commit -m "m2" m2
+   86  git commit -m "m3" m3
+   87  git log --oneline
+   88  git branch feature
+   89  git checkout feature
+   90  git log --oneline
+   91  touch f1
+   92  git add .
+   93  git commit -m "f1"
+   94  git log --oneline
+   95  git checkout -
+   96  ls
+   97  touch m4
+   98  git add .
+   99  git commit -m "m4"
+  100  git checkout -
+  101  git merge master
+  102  ls
+  103  git log --oneline
+  104  git checkout -
+  105  rm -ifr .git
+  106  ls
+  107  rm *
+  108  git status
+  109  git init
+  110  touch m1 m2 m3
+  111  git status
+  112  git add .
+  113  git commit -m "m1" m1
+  114  git commit -m "m2" m2
+  115  git commit -m "m3" m3
+  116  git branch feature
+  117  git checkout feature
+  118  git log --oneline
+  119  touch f1
+  120  git add .
+  121  git commit -m "f1"
+  122  git log --oneline
+  123  git checkout -
+  124  touch m4
+  
+from Raman Sharma to everyone:    9:11 AM
+125  git add .
+  126  git commit "m4" m4
+  127  git commit -m "m4" m4
+  128  git log --oneline
+  129  git checkout -
+  130  git rebase master
+  131  ls
+  132  git log --oneline
+  
+  ----------------------------------
+  1  apt install maven -y
+    2  java --version
+    3  mvn --version
+    4  mvn archetype:generate
+    5  ls
+    6  rm -ifr mr SpringProj2/ squash/ worktree/
+    7  ls
+    8  cd myproj/
+    9  ls
+   10  apt install tree
+   11  tree
+   12  cat src/main/java/com/raman/App.java
+   13  cat src/test/java/com/raman/AppTest.java
+   14  cat pom.xml
+   15  ls
+   16  tree
+   17  mvn compile
+   18  ls
+   19  ls target/
+   20  mvn clean
+   21  ls
+   22  mvn clean compile
+   23  ls
+   24  tree
+   25  cat src/test/java/com/raman/AppTest.java
+   26  mvn clean test
+   27  ls target/
+   28  ls target/surefire-reports/
+   29  cat target/surefire-reports/com.raman.AppTest.txt
+   30  vi src/test/java/com/raman/AppTest.java
+   31  mvn clean test
+   32  cat target/surefire-reports/com.raman.AppTest.txt
+   33  vi src/test/java/com/raman/AppTest.java
+   34  mvn clean test
+   35  cat target/surefire-reports/com.raman.AppTest.txt
+   36  ls target/
+   37  mvn package
+   
+from Raman Sharma to everyone:    7:31 AM
+ 38  ls target/
+   39  java -cp target/myproj-1.0-SNAPSHOT.jar com.raman.App
+   40  vi src/main/java/com/raman/App.java
+   41  mvn clean package
+   42  java -cp target/myproj-1.0-SNAPSHOT.jar com.raman.App
+   43  vi src/test/java/com/raman/AppTest.java
+   44  mvn clean package
+   45  ls target/
+   46  vi src/main/java/com/raman/App.java
+   47  vi src/test/java/com/raman/AppTest.java
+   48  mvn clean package
+   49  ls target/
+   50  mvn clean install
+   51  ls /root/.m2/repository/com/raman/myproj/1.0-SNAPSHOT/
+   52  mvn deploy
+   ------------------------------------
+   1  apt install docker.io -y
+    2  systemctl status docker
+    3  docker pull ubuntu
+    4  docker images
+    5  docker pull ubuntu:18.04
+    6  docker images
+    7  docker pull centos
+    8  docker container run -it --name c1 -d ubuntu
+    9  docker images
+   10  docker container ls
+   11  docker ps
+   12  docker container ls --all
+   13  docker ps -a
+   14  docker exec -it c1 bash
+   15  docker container run -it --name c2 -d centos
+   16  docker container ls
+   17  docker stop c2
+   18  docker ps
+   19  docker ps -a
+   20  docker start c2
+   21  docker ps -a
+   22  docker restart c1
+   23  docker ps -a
+   24  docker kill c2
+   25  docker ps -a
+   26  docker restart c2
+   27  docker ps -a
+   28  docker pause c2
+   29  docker ps -a
+   30  docker unpause c2
+   31  docker ps -a
+   32  docker rm c2
+   33  docker stop c2
+   34  docker rm c2
+   35  docker ps -a
+   36  docker rm c1
+   37  docker rm -f c1
+   38  docker image
+   39  docker images
+   
+from Raman Sharma to everyone:    9:36 AM
+ 40  docker rmi ubuntu
+   41  docker rmi ubuntu:18.04
+   42  docker images
+   43  docker pull ubuntu
+   44  docker images
+   45  docker rmi -f $(docker images -q)
+   46  docker images
+   47  docker run -itd ubuntu
+   48  docker ps -a
+   49  docker rm -f $(docker ps -a -q)
+   50  dokcer ps -a
+   51  docker ps -a
+   
+   -----------------------------------
+   1  docker ps
+    2  docker images
+    3  docker container run -it --name web -p 80:80 -d ubuntu
+    4  docker container ls
+    5  docker exec -it web bash
+------Inside the container
+ 1  apt update
+    2  apt install apache2 -y
+    3  service apache2 status
+    4  service apache2 start
+    5  service apache2 status
+    6  curl localhost
+    7  apt install curl
+    8  curl localhost
+    9  ls /var/www/html/
+   10  echo "<h1> Directly created in Container </h1>" > /var/www/html/myfile.html
+   11  history
+---
+ 7  echo "<h1>This is simple super cool html app from dev team </h1>">test.html
+    8  cat test.html
+    9  docker cp test.html web:/var/www/html
+   10  docker exec -it web bash
+   11  docker ps -a
+   12  docker commit web webimg
+   13  docker images
+   14  docker save webimg > myimg.tar
+   15  ls
+   16  rm -ifr myproj/
+   17  ls
+   18  docker rmi webimg
+   19  docker images
+   20  docker load < myimg.tar
+   21  docker images
+   
+   -----------------------------------
+   from Raman Sharma to everyone:    7:57 AM
+   23  docker images
+   24  docker login
+   25  docker logout
+   26  docker login
+   27  docker push webimg
+   28  docker image tag webimg ramansharma95/webimg
+   29  docker images
+   30  docker push ramansharma95/webimg
+   31  docker rm -f web
+   32  docker rmi webimg
+   33  docker rmi ramansharma95/webimg
+   34  docker images
+   35  docker pull registry
+   36  docker images
+   37  docker container run -it --name local_registry -p 5000:5000 -d registry
+   38  docker ps -a
+   39  curl localhost:5000/v2/_catalog
+   40  docker image tag ubuntu localhost:5000/myubuntu
+   41  docker images
+   42  docker push localhost:5000/myubuntu
+   43  curl localhost:5000/v2/_catalog
+   44  docker images
+   45  docker rmi localhost:5000/myubuntu
+   46  docker images
+   47  docker pull localhost:5000/myubuntu
+   48  docker images
+   49  docker rmi localhost:5000/myubuntu
+   50  docker rm -f local_registry
+   51  docker volume prune
+   52  docker ps -a
+from Raman Sharma to everyone:    7:57 AM
+ 53  mkdir /etc/docker/certs.d
+   54  openssl req \
+   55  openssl req -newkey rsa:4096 -nodes -sha256 -keyout /certs/domain.key  -addext "subjectAltName = DNS:repo.docker.kmit" -x509 -days 365 -out /certs/domain.crt
+   56  ls /certs/
+   57  cd /certs/
+   58  ls
+   59  docker run -d -p 5000:5000 -v /my_repo:/var/lib/registry -v /certs:/certs -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/domain.crt -e REGISTRY_HTTP_TLS_KEY=/certs/domain.key --restart on-failure --name myregistry registry
+   60  ip a
+   61  vi /etc/hosts
+   62  docker image tag mysql  repo.docker.kmit:5000/mysql
+   63  docker images
+   64  docker push repo.docker.kmit:5000/mysql
+   65  cat domain.crt
+-----------
+1  apt update
+    2  apt install docker.io -y
+    3  vi /etc/hosts
+    4  mkdir -p /etc/docker/certs.d/repo.docker.kmit:5000
+    5  vi /etc/docker/certs.d/repo.docker.kmit\:5000/
+    6  vi /etc/docker/certs.d/repo.docker.kmit\:5000/domain.crt
+    7  docker images
+    8  history
+	
+	
+	jenkins
+	chittu chittu
+	http://3.110.140.72:8080/
+
+
+
+
+
+
+
+
